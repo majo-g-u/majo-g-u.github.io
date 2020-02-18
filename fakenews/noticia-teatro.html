@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Fake News</title>
+</head>
+<body>
+
+  <!--==========================================================-->
+  <!--           Inicio De la NavBar y El Header                -->
+  <!--==========================================================-->
+
+  <header class="container-fluid ">
+    <div class="row  pt-1 d-md-flex align-items-center justify-content-between">
+      <div class="col-5 col-md-2 col-lg-2">
+         <a href="index.html"><img class="img-fluid logo-header" src="img/logoNF.png" alt="fakenews.png" width="150px"></a> 
+      </div>
+       <div class="d-none d-sm-none d-md-block d-lg-none col-sm-4 ">
+          <div id="TT_yhnwbxtxdQl9lcIK1fSzzDDDD8aK1nKlLY1YkZioqkD"></div>
+      </div>
+      <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 ">
+        <div id="TT_yBnArhtxtQlalBFKMAzzDjDzz8nKTnKlLdEd1sy5KEj">San Miguel de Tucuman</div>        
+      </div>
+      <div class="d-block d-md-none d-lg-none col clima-header">      
+        <div id="TT_JhmwLhYxtQl9lcGK1fVjjzzDj9uKBnK">El tiempo - Tutiempo.net</div>    
+      </div>
+      <div class="d-none d-md-flex justify-content-end align-items-center col-sm-4 col links">
+        <a href="inprogress.html" class="mx-1"> <i class="fab fa-instagram navbar-instagram"></i></a>
+        <a href="inprogress.html" class="mx-1"> <i class="fab fa-facebook-square navbar-facebook"></i></a>
+        <a href="inprogress.html" class="mx-1"> <i class="fab fa-twitter-square navbar-twitter"></i></a>            
+      </div>
+      <div class="mr-2">
+        <div class="d-none d-md-block">
+          <a class="" href="login.html">Login</a> <i> / </i> 
+          <a href="" class="" data-toggle="modal" data-target="#modal-registro">Registro</a>
+        </div>        
+        <div class="modal fade" id="modal-registro" tabindex="-1" role="dialog" aria-labelledby="modal-registro-titulo" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-registro-titulo"><img class="img-fluid" src="img/logoNF.png" alt=""  width="150px"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" placeholder="Ej:Correo@correo.com">
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-12 col-md-6">
+                      <label for="">Nombre</label>
+                      <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="">Apellido</label>
+                      <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Nombre de Usuario</label>
+                    <input type="text" class="form-control" placeholder="Usuario">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Confirmar contraseña</label>
+                    <input type="password" class="form-control">
+                  </div>
+                  <div class="row form-group">
+                    <div class="col-12 col-md-5">
+                      <label for="Date">Fecha de Nacimiento</label>
+                      <input type="date" class="form-control" >
+                    </div>
+                    <div class="col-12 col-md-5">
+                      <label for="country">Pais</label>
+                      <select name="country" id="country" class="form-control">
+                        <option value="pais1">Argentina</option>
+                        <option value="pais2">Australia</option>
+                        <option value="pais3">España</option>
+                        <option value="pais4">Estados Unidos</option>
+                      </select>
+                    </div>
+                  </div>
+                  <label for="">Sexo</label>
+                  <div>
+                    <div class="form-check form-check-inline ">
+                      <input class="form-check-input" type="radio" name="sexo" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Hombre</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="sexo" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">Mujer</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="sexo" id="inlineRadio3" value="option3">
+                      <label class="form-check-label" for="inlineRadio3">Otro</label>
+                    </div>
+                  </div>
+                  <div class="form-check form-check mt-2">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Acepto Terminos y condiciones</label>
+                  </div>
+                </form>
+              </div>            
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#comprobar-registro">
+                    Registrarse
+                </button>
+                <div class="modal fade" id="comprobar-registro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Confirmacion</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          Compruebe su correo para verificar su cuenta.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><a class="button-confirm-regist" href="#">Ok</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="reset" class="btn btn-outline-secondary" data-dismiss="modal">Cancelar</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-none d-block navbar navbar-expand-md navbar-light mt-2">
+        <button class="col-12 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <nav class="container-fluid navbar navbar-expand-md navbar-light">
+    <div class="row flex-column-reverse collapse navbar-collapse " id="navbarSupportedContent">
+      <div class="col-12 border-top">
+        <div class="button-margin-fix">
+          <div class="d-block d-md-none text-right">
+            <div class="m-2">
+              <a href="login.html">Login</a>
+            </div>            
+            <div class="m-2">
+              <a href="" data-toggle="modal" data-target="#modal-registro">Registro</a>
+            </div>
+            
+          </div> 
+        </div>
+        <div class="row ">
+          <form class="d-flex d-md-none  col-12 form-inline my-2 justify-content-lg-end ">
+            <input class="search-mobile serch-margin-fix" type="search" name="nombre" placeholder="Buscar">
+          </form>
+          <ul class="col-8 navbar-nav mr-auto justify-content-around ul-navbar">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ultimas.html">Ultimas Noticias</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Secciones
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="politica.html">Politicas</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="teatro.html">Teatro</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="deporte.html">Deporte</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html" >Contacto</a>
+            </li>
+            <a href="frequent-ask.html" class="d-flex d-md-none col info-header-navbar"> <i class=" fas fa-info info-margin-fix"></i></a>
+          </ul>
+            <form class="d-none d-md-flex form-inline justify-content-end ">
+              <input class="search-mobile" type="search" name="nombre" placeholder="Buscar">
+              <a href="frequent-ask.html" class="col-1 info-header-navbar"><i class=" fas fa-info"></i></a>
+            </form>
+        </div>
+      </div>            
+    </div>
+  </nav>
+  <!--==========================================================-->
+  <!--            Fin de La NavBar   Y Header                   -->
+  <!--==========================================================-->
+
+  <main class="container-fluid">
+    <section class="row">
+      <article class="col ml-3">
+              <h3>Descubren micrófonos ocultos en todos los aguacates de Lidl</h3>
+              <p>HAN ESTADO AHÍ TODO ESTE TIEMPO</p>
+      </article>
+    </section>
+    <div class="row justify-content-end position-fixed w-100 btns-fixed">
+      <article class="">
+        <a href="#Comentar" class="col d-none d-lg-flex my-1"><button type="button" class="btn btn-fake col"> <i class="far fa-comment-dots btns-fixed"></i></button></a>
+        <a data-toggle="modal" data-target="#compartir" class="col d-none d-lg-flex"><button data-toggle="modal" data-target="#compartir" type="button" class="btn btn-fake col"> <i class="fas fa-share-alt btns-fixed"></i></button></a>
+        <a href="#Comentar" class="col-12 d-flex d-lg-none"><button type="button" class="btn btn-fake col"> <i class="far fa-comment-dots"></i></button></a>
+        <a data-toggle="modal" data-target="#compartir" class="col-12 d-flex d-lg-none"><button data-toggle="modal" data-target="#compartir" type="button" class="btn btn-fake col"><i class="fas fa-share-alt"></i></button></a>
+      </article>
+    </div>
+    <section class="row">
+      <div class="col-12 d-flex justify-content-center"><img class="img-fluid rounded" src="img/not-teatro.png" alt=""></div>
+      <article class="container">
+          <div class="row justify-content-center">
+          <p class="not-teatro-text">Tras el descubrimiento de un micrófono oculto en un robot de cocina del Lidl, ahora unos estudiantes españoles han abierto un aguacate y han descubierto en su interior un “dispositivo marrón y muy duro que podría ser un micrófono”, según ellos mismos han informado en Twitter, donde muestran las fotografías de la fruta abierta por la mitad y con el micro a la vista.
+
+            “Abres el aguacate y ahí está: redondo, gordísimo y muy mal disimulado”, explica uno de estos estudiantes.<img class="img-fluid rounded p-3" src="img/spy-cam.jpg" align="right" alt=""> “¿Qué coño pintanba esa madera tan grande ahí dentro? Qué tontos hemos sido. No creo que Lidl quisiera espiarnos pero es importante que esta vulnerabilidad se conozca para que la gente vigile lo que dice cuando hay aguacates delante y no diga datos comprometedores en voz alta”.
+            
+            “Lo peor no es que se comprometa la seguridad de las personas, lo peor es que ocupa mucho sitio y a veces abres el aguacate y es todo micrófono”, se queja.
+            
+            Lidl ha afirmado a EMT que el micrófono está desactivado y “la seguridad del aguacate está garantizada”.  El micrófono, según sostiene, está pensado “para futuras funcionalidades como el control de voz, tal y como ya sucede con otras frutas similares como el plátano, que es un micrófono de mano y siempre se ha comercializado como tal, porque no se come”.
+            
+            La Organización de Consumidores y Usuarios ha informado que por suerte la mayoría de conversaciones que las personas tienen delante de los aguacates giran casi exclusivamente sobre dos temas: cuánto cilantro echarle al guacamole y lo difícil que es saber cuándo el aguacate está en su punto y “qué puta mierda el hecho de que esté ya todo marrón y haya que tirarlo, ya no compro más esta puta basura, vaya timo”.</p>
+          </div>
+        </article>
+      </section>
+      <section class="row justify-content-end align-items-end">
+        <article class="col-4 d-flex">
+          <a href="#Comentar" class="col d-none d-lg-flex"><button type="button" class="btn btn-fake col">Comentar <i class="far fa-comment-dots"></i></button></a>
+          <a data-toggle="modal" data-target="#compartir" class="col d-none d-lg-flex"><button type="button" class="btn btn-fake col">Compartir <i class="fas fa-share-alt"></i></button></a>
+          <a href="#Comentar" class="col d-flex d-lg-none"><button type="button" class="btn btn-fake col"> <i class="far fa-comment-dots"></i></button></a>
+          <a data-toggle="modal" data-target="#compartir" class="col d-flex d-lg-none"><button type="button" class="btn btn-fake col"><i class="fas fa-share-alt"></i></button></a>
+        </article>
+      </section>
+
+
+      <section class="mt-5">
+        <h3 class="text-center">Destacados</h3>
+        <hr>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner d-block w-75 m-auto">
+            <div class="carousel-item active">
+              <div class="row">
+
+                <div class="col-md-6 col-lg-3">
+                  <div class="d-flex flex-column card my-3">
+                    <div class="d-flex justify-content-end align-items-end ">
+                      <a href="#"><img src="img/1.png" class="w-100 img-fluid rounded-top" alt="..."></a>
+                      <a href="#" class="badge badge-pill badge-fake float-right position-absolute">Politica</a>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                       <a href="#"><h4>La inminente extinción</h4></a> 
+                        <a href="#">Roberto Barb</a>
+                      </div>
+                      
+                    </div>
+                    <div class="lorem d-none d-md-block"><p>El planeta Tierra podrían desaparecer en solo unas décadas</p></div>
+                   
+                  </div>
+                </div>
+    
+                <div class="d-none d-md-flex col-md-6 col-lg-3">
+                    <div class="d-flex flex-column card my-3">
+                        <div class="d-flex justify-content-end align-items-end ">
+                          <a href="#"><img src="img/2.png" class="w-100 img-fluid rounded-top" alt="..."></a>
+                          <a href="#" class="badge badge-pill badge-fake float-right position-absolute">Politica</a>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                           <a href="#"><h4>Audiencias: Felipe VI</h4></a> 
+                            <a href="#">Carla Ruiz</a>
+                          </div>
+                          
+                        </div>
+                        <div class="lorem d-none d-md-block"><p>Inicia en First Dates su ronda de contactos con todos los españoles</p></div>
+                        
+                    </div>
+                </div>
+    
+                <div class="d-none d-lg-flex col-lg-3">
+                    <div class="d-flex flex-column card my-3">
+                        <div class="d-flex justify-content-end align-items-end ">
+                          <a href="#"><img src="img/3.jpg" class="w-100 img-fluid rounded-top" alt="..."></a>
+                          <a href="#" class="badge badge-pill badge-fake float-right position-absolute">Politica</a>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                           <a href="#"><h4>Se descubrio una nueva ciudad</h4></a> 
+                            <a href="#">Carla Ruiz</a>
+                          </div>
+                          
+                        </div>
+                        <div class="lorem d-none d-md-block"><p>Una ciudad fue descubierta esta mañana mientras se hacian trabajos de rutina </p></div>
+                       
+                    </div>
+                </div>
+
+                <div class="d-none d-lg-flex col-lg-3">
+                    <div class="d-flex flex-column card my-3">
+                        <div class="d-flex justify-content-end align-items-end ">
+                          <a href="#"><img src="img/4.jpg" class="w-100 img-fluid rounded-top" alt="..."></a>
+                          <a href="#" class="badge badge-pill badge-fake float-right position-absolute">Teatro</a>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                           <a href="#"><h4>Sin dinero y hogar?</h4></a> 
+                            <a href="#">Raquel Lenher</a>
+                          </div>
+                          
+                        </div>
+                        <div class="lorem d-none d-md-block"><p>Siete consejos para convertir el ascensor del edificio del que te acaban de echar en tu nueva vivienda</p></div>
+                        
+                    </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+
+                  <div class="col-md-6 col-lg-3">
+                      <div class="d-flex flex-column card my-3">
+                        <div class="d-flex justify-content-end align-items-end ">
+                          <a href="#"><img src="img/5.jpg" class="w-100 img-fluid rounded-top" alt="..."></a>
+                          <a href="#" class="badge badge-pill badge-fake float-right position-absolute">Teatro</a>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                           <a href="#"><h4>Un perro se convierte en persona</h4></a> 
+                            <a href="#">Roberto Barb</a>
+                          </div>
+                          
+                        </div>
+                        <div class="lorem d-none d-md-block"><p>Bebio accidentalmente unas gotas de café y desperto cambiado. </p></div>
+                       
+                      </div>
+                  </div>
+      
+                  <div class="d-none d-md-flex col-md-6 col-lg-3">
+                      <div class="d-flex flex-column card my-3">
+                          <div class="d-flex justify-content-end align-items-end ">
+                            <a href="#"><img src="img/6.jpg" class="w-100 img-fluid rounded-top" alt="..."></a>
+                            <a href="#" class="badge badge-pill badge-fake float-right position-absolute">Teatro</a>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <a href="#"><h4>Adios Actores de Carne y hueso</h4></a> 
+                              <a href="#">Raquel Lenher</a>
+                            </div>
+                            
+                          </div>
+                          <div class="lorem d-none d-md-block"><p>Nueva tecnologia permite crear personas reales de plexiglas </p></div>
+                          
+                      </div>
+                  </div>
+      
+                  <div class="d-none d-lg-flex col-lg-3">
+                      <div class="d-flex flex-column card my-3">
+                          <div class="d-flex justify-content-end align-items-end ">
+                            <a href="#"><img src="img/7.png" class="w-100 img-fluid rounded-top" alt="..."></a>
+                            <a href="#" class="badge badge-pill badge-fake float-right position-absolute">Teatro</a>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <a href="#"><h4>Físicos de Ginebra</h4></a> 
+                              <a href="#">Tomas Grey</a>
+                            </div>
+                            
+                          </div>
+                          <div class="lorem d-none d-md-block"><p>necesitan urgentemente un frenador de partículas para solucionar un problema inminente</p></div>
+                         
+                      </div>
+                  </div>
+    
+                  <div class="d-none d-lg-flex col-lg-3">
+                      <div class="d-flex flex-column card my-3">
+                          <div class="d-flex justify-content-end align-items-end ">
+                            <a href="#"><img src="img/3.jpg" class="w-100 img-fluid rounded-top" alt="..."></a>
+                            <a href="#" class="badge badge-pill badge-fake float-right position-absolute">Sociales</a>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <a href="#"><h4>Se descubrio una nueva ciudad</h4></a> 
+                              <a href="#">Carla Ruiz</a>
+                            </div>
+                            
+                          </div>
+                          <div class="lorem d-none d-md-block"><p>Una ciudad fue descubierta esta mañana </p></div>
+                          
+                      </div>
+                  </div>
+    
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+
+                  <div class="col-md-6 col-lg-3">
+                      <div class="d-flex flex-column card my-3">
+                        <div class="d-flex justify-content-end align-items-end ">
+                          <a href="#"><img src="img/8.jpg" class="w-100 img-fluid rounded-top" alt="..."></a>
+                          <a href="#" class="badge badge-pill badge-fake float-right position-absolute">Politica</a>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                           <a href="#"><h4>Eco tren en marcha.</h4></a> 
+                            <a href="#">Raquel Lenhe</a>
+                          </div>
+                          
+                        </div>
+                        <div class="lorem d-none d-md-block"><p>nuevo tren sin luces para ahorrar energia y producir menos contaminacion</p></div>
+                       
+                      </div>
+                  </div>
+      
+                  <div class="d-none d-md-flex col-md-6 col-lg-3">
+                      <div class="d-flex flex-column card my-3">
+                          <div class="d-flex justify-content-end align-items-end ">
+                            <a href="#"><img src="img/9.jpg" class="w-100 img-fluid rounded-top" alt="..."></a>
+                            <a href="#" class="badge badge-pill badge-fake float-right position-absolute">Politica</a>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <a href="#"><h4>Emergencia aquatica</h4></a> 
+                              <a href="#">Carla Ruiz</a>
+                            </div>
+                            
+                          </div>
+                          <div class="lorem d-none d-md-block"><p>La producción de salmón ahumado ha caído un 80% desde que se prohibió arrojar colillas al río</p></div>
+                         
+                      </div>
+                  </div>
+      
+                  <div class="d-none d-lg-flex col-lg-3">
+                      <div class="d-flex flex-column card my-3">
+                          <div class="d-flex justify-content-end align-items-end ">
+                            <a href="#"><img src="img/6.jpg" class="w-100 img-fluid rounded-top" alt="..."></a>
+                            <a href="#" class="badge badge-pill badge-fake float-right position-absolute">Sociales</a>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <a href="#"><h4>Adios Actores de Carne y hueso</h4></a> 
+                              <a href="#">Carla Ruiz</a>
+                            </div>
+                            
+                          </div>
+                          <div class="lorem d-none d-md-block"><p>Nueva tecnologia permite crear personas reales de plexiglas </p></div>
+                          
+                      </div>
+                  </div>
+    
+                  <div class="d-none d-lg-flex col-lg-3">
+                      <div class="d-flex flex-column card my-3">
+                          <div class="d-flex justify-content-end align-items-end ">
+                            <a href="#"><img src="img/5.jpg" class="w-100 img-fluid rounded-top" alt="..."></a>
+                            <a href="#" class="badge badge-pill badge-fake float-right position-absolute">Sociales</a>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <a href="#"><h4>Un perro se convierte en persona.</h4></a> 
+                              <a href="#">Carla Ruiz</a>
+                            </div>
+                            
+                          </div>
+                          <div class="lorem d-none d-md-block"><p>Bebio accidentalmente unas gotas de café y desperto cambiado. </p></div>
+                      </div>
+                  </div>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==========================================================-->
+      <!--                         Comentarios                      -->
+      <!--==========================================================-->
+
+    <h3 class="my-5">Comentarios <hr></h3>
+
+    <section class="table-responsive d-none d-sm-flex" >
+      <table class="table ">
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Comentarios mas Populares</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col">Likes&Dislikes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">5/6/19</th>
+              <td colspan="5"> <a href="user-profile.html">Señor Equis</a> <br>Que noticia mas interesante, ahora nunca mas confiare en esas cosas verdes</td>
+              <td><p class="likes-dislikes">9 <i class="far fa-heart"></i> 2 <i class="fas fa-heart-broken"></i> </p></td>
+            </tr>
+            <tr>
+              <th scope="row">20/03/19</th>
+              <td colspan="5"><a href="user-profile.html">Maria</a> <br> Yo sabia que era una semilla muy grande para una fruta tan pequeña D:</td>
+              <td><p class="likes-dislikes">3 <i class="far fa-heart"></i> 1 <i class="fas fa-heart-broken"></i> </p></td>
+            </tr>
+            <tr>
+              <th scope="row">3/2/19</th>
+              <td colspan="5"><a href="user-profile.html">Mariano</a> <br>Yo siempre odie las paltas asique nunca tendre ese problema xD</td>
+              <td><p class="likes-dislikes">219 <i class="far fa-heart"></i> 30 <i class="fas fa-heart-broken"></i> </p></td>
+            </tr>
+            <tr>
+                <th scope="row">5/6/19</th>
+                <td colspan="5"><a href="user-profile.html">Marta</a> <br> ¡¡¡Hola!!! Las cartas en cadena han existido desde 1897. Eso es increíble porque antes no había e-mail y probablemente tampoco había tantos carajitos escribiendo cartas. Así que esto funciona así. Pásala a 15.067 personas en los próximos 7 minutos o algo horrible te sucederá. </td>
+                <td><p class="likes-dislikes">7 <i class="far fa-heart"></i> 15 <i class="fas fa-heart-broken"></i> </p></td>
+              </tr>
+              <tr>
+                <th scope="row">20/03/19</th>
+                <td colspan="5"><a href="user-profile.html">Jorgepro20</a> <br> Esta noticia es super falsa... o deberia decir fake?</td>
+                <td><p class="likes-dislikes">20 <i class="far fa-heart"></i> 12 <i class="fas fa-heart-broken"></i> </p></td>
+              </tr>
+              <tr>
+                <th scope="row">3/2/19</th>
+                <td colspan="5"><a href="user-profile.html">Señor Equis</a> <br> Ojala no hubiera tantos comentarios para escribir.</td>
+                <td><p class="likes-dislikes">5 <i class="far fa-heart"></i> 2 <i class="fas fa-heart-broken"></i> </p></td>
+              </tr>
+          </tbody>
+        </table>
+    </section>
+
+    <section class="container"  id="Comentar">
+    <div class="row col-12 col-md-6">
+      <textarea placeholder="Que te gustaria decir..." class="coment-area"></textarea>
+    </div>
+    <div class="row mt-3">
+      <button class="btn btn-fake">
+        Comentar
+      </button>
+      <div class="col">
+        <i class="fas fa-paperclip icons-coment"></i>
+        <i class="fas fa-smile-beam icons-coment"></i>
+        <i class="fas fa-camera icons-coment"></i>
+      </div>
+     </div>
+    </section>
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="compartir" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+       
+          <div class="modal-body text-center bg-dark">
+            <a href="https://www.facebook.com/" target="_blank"> <img src="img/f.png" alt="" class="img-fluid shape-social w-25 mr-2"></a>
+            <a href="https://twitter.com/" target="_blank"> <img src="img/t.png" alt="" class="img-fluid shape-social w-25 mx-2"></a>
+            <a href="https://www.instagram.com/" target="_blank"> <img src="img/i.png" alt="" class="img-fluid shape-social w-25 ml-2"></a>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!--==========================================================-->
+  <!--                    inicio Del footer                     -->
+  <!--==========================================================-->
+
+  <footer>
+        <div class="container-fluid">
+          <hr>
+          <div class="row flex-column flex-md-row-reverse align-items-center justify-content-between mx-5">
+            <div class="my-3"> <!-- Logo en footer -->
+              <a href="index.html"><img class="img-fluid" src="img/logoNF.png" alt=""  width="150px"></a>          
+            </div>
+            <div class="d-none d-md-block">
+              <ul class="navbar-nav">
+                <li><a class="" href="index.html">Home</a></li>
+                <li><a class="" href="ultimas.html">Ultimas Noticias</a></li>
+                <li><a class="" href="politica.html">Politicas</a></li>
+                <li><a class="" href="teatro.html">Teatro</a></li>
+                <li><a class="" href="deportes.html">Deporte</a></li>
+              </ul>
+            </div>
+            <div class="d-none d-md-block">
+              <ul class="navbar-nav">
+                <li><a class="" href="login.html">Login</a></li>
+                <li><a href="" data-toggle="modal" data-target="#modal-registro">Registro</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://www.twitter.com/">Twitter</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mt-3 d-none d-md-block"> <!-- Info de Contacto -->
+                <div>
+                  <p>
+                    Gral Paz 765, S.M. Tucumán <br>   <!-- Direccion -->
+                    Tucumán (T4000DAN)
+                  </p>          
+                </div>
+              </div>
+              <a href="contacto.html" class="d-flex links-footer">
+                <i class="fas fa-envelope-square"></i>
+                <span class="ml-3">Contacto</span> <!-- Correo -->
+              </a>
+              <a href="inprogress.html" class="d-flex links-footer">
+                <i class="fab fa-whatsapp-square"></i>
+                <span class="ml-3">381 1234567</span> <!-- Telefono -->
+              </a>
+            </div>
+          </div>
+          <hr>  
+          <div class="row justify-content-center justify-content-md-between align-items-center  mx-5">
+            <div class="d-none d-md-block">
+              Fake News
+            </div>
+            <div class="d-none d-md-block">
+              Copyright © Rolling Code
+            </div>
+            <div class=""> <!-- QR Data Fiscal -->
+              <img src="img/QR.png">
+            </div>
+          </div>
+        </div>
+  </footer>
+  <script type="text/javascript" src="https://www.tutiempo.net/s-widget/l_yhnwbxtxdQl9lcIK1fSzzDDDD8aK1nKlLY1YkZioqkD"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://www.tutiempo.net/s-widget/l_yBnArhtxtQlalBFKMAzzDjDzz8nKTnKlLdEd1sy5KEj"></script>
+  <script type="text/javascript" src="https://www.tutiempo.net/s-widget/l_JhmwLhYxtQl9lcGK1fVjjzzDj9uKBnK"></script>
+</body>
+</html>

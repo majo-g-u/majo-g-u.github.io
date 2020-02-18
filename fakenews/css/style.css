@@ -1,0 +1,750 @@
+header{
+    background-color:#f8f9fa;
+}
+
+footer{
+    background-color: #A6A8A7;
+}
+
+nav{
+    background-color: #f8f9fa;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	font-size: 1rem;
+}
+
+.font-color-overlap {
+    color: white;
+}
+
+.btn-fake{
+    background-color: #e2ddddb5;
+    border-color: #c1bdbd;
+    color: #9e2424;
+}
+
+.btn-fake:hover{
+    background: #b1b1b1f0;
+    color: #fff;
+    border-color: #9e242459;
+}
+
+.badge-fake {
+    background-color: #9e2424bf;
+    color: #ffffffe3;
+    border-radius: .25rem;
+    padding: 11px 20px;
+}
+
+.coment-area {
+    width: 100%;
+    height:100%;
+    min-height: 100px;
+    max-height:150px ;
+    border: 1px solid #9e2424;
+    background-color: rgba(166, 168, 167, 0.432);
+    border-radius: 3px;
+    }
+
+
+.icons-coment {
+    padding: 5px; 
+    margin-left: 10px;
+    font-size: 30px;
+    background-color: #A6A8A7;
+    border-radius: 3px;
+}
+    
+/* ===============ESTILOS DEL HEADER Y NAVBAR======================== */
+
+.logo-header {
+	max-width:125px;
+}
+
+.logo-perfil {
+    max-width: 87px;
+}
+
+.font-color-overlap {
+    color: white;
+}
+
+.login-button-navbar {
+    color: white;
+    text-decoration: none;
+    margin: auto;
+}
+
+.login-button-navbar:hover {
+    text-decoration: none;
+    color: #fff;
+} 
+
+.clima-header {
+    margin: 0 -25px;
+} 
+
+.navbar-instagram , .navbar-facebook , .navbar-twitter {
+    font-size: 3rem;
+    color: #000;
+}
+
+.button-modal-regist {
+    color: #000;
+}
+.button-modal-regist:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.info-header-navbar {
+    font-size: 1.4rem;
+    cursor:help;
+}
+
+.button-confirm-regist {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-confirm-regist:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
+ .search-mobile {
+    cursor: context-menu;
+    width: 45px; /*ancho por defecto*/
+    background: #ededed url('../img/search-icon.png') no-repeat 9px center; /*icono lupa*/
+    padding: 9px 10px 9px 32px;
+    border-radius: 15em;
+    -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+    -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+    -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+    transition: all .5s; /* transición de .5seg a todos los elementos*/
+    outline: none; /* ocultar el fucos automático de los input */
+}
+ .search-mobile:focus {
+    width: 130px; /*tamaño del boton buscar al hacer click*/
+    padding-left: 32px; /*espacio entre el icono lupa y el placeholder*/
+    color: #000;
+    background-color: #FFF;
+}
+
+/* ================FIN DE ESTILOS DEL HEADER Y NAVBAR======================== */
+
+
+
+/* ===================================INDEX================================= */
+* {
+    font-family: 'Merriweather', serif;
+}
+
+.intro {
+	margin-top: 20px;
+	height: 30px;
+	width: 60%;
+	justify-content: center;
+}
+.slider-noti{
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.slider-hover-style {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 16%;
+}
+
+.slider-hover-style:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.titulo-slider   {
+    background-color: #0000007a;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.titulo-politica   {
+    background-color: #0000007a;
+}
+
+.titulo-responsive {
+    font-size: 1rem;
+}
+@media (min-width: 992px) {
+    .titulo-responsive {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+.fakenews-style {
+    margin-top: 100px;
+    margin-bottom: 500px;
+    position: relative;
+    background: rgba(166, 168, 167, 0.116);
+    border-radius: 5px;
+}
+
+.animation-fakenews {
+display: flex;
+height: 7vw;
+font-size: 7vw;
+color: #9e2424;
+line-height: 7vw;
+justify-items: center;
+overflow: hidden; 
+text-align: center;
+}
+
+.lista-animated {
+    list-style: none;
+    padding-left: 10px;
+    animation: text-fake 8s infinite;
+}
+
+@keyframes text-fake {
+    0% { margin-top: 0%; }
+    15% { margin-top: 0%; }
+
+    20% { margin-top: -7vw;}
+    35% { margin-top: -7vw;}
+
+    40% {margin-top: -14vw;}
+    55% {margin-top: -14vw;}
+
+    60% {margin-top: -21vw;}
+    75% {margin-top: -21vw;}
+
+    80% {margin-top: -28vw;}
+    95% {margin-top: -28vw;}
+
+    100%{margin-top: 0%;}
+}
+
+.animation-fakenews p, .lista-animated {
+    margin: 0%;
+}
+.animation-fakenews p {
+    font-size: 7vw;
+}
+
+.news-section-index {
+    margin-top: -400px;
+}
+
+.news-section-index-container {
+    border: 1px solid #000;
+}
+
+.btn-news-section-index {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+}
+
+.pad-img-news-section-index {
+    padding: 0%;
+}
+
+
+.news-section-background {
+    background: rgba(166, 168, 167, 0.253);
+}
+
+.news-section-titles {
+    color: #9e2424;
+}
+
+.text-end {
+    text-align: end;
+}
+
+/* ======================Usuario Y Perfil de Usuario============================ */
+
+section {
+    margin-top: 30px;
+}
+
+.personal-data {
+    background: #f8f7f7d3;
+}
+
+.personal-data-text p {
+    color: red;
+    font-size: 1em;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    border-bottom-right-radius: 0%;
+    padding: 10px;
+    margin-left: 3px;
+}
+
+
+.coment-card {
+    margin-top: 100px;
+}
+
+.card-comented {
+    padding: 20px;
+    border-bottom: 1px solid rgb(212, 211, 211);
+}
+
+.ad-imgs {
+    width: 1000px;
+    height: 300px;
+}
+
+.likes-dislikes {
+    font-size: 1rem;
+    padding: 0%;
+    text-align: end;
+    margin-bottom: 0%
+}
+
+
+
+/* ======================LOGIN============================ */
+
+
+.capbox {
+	background-color: #92D433;
+	border: #B3E272 0px solid;
+	border-width: 0px 12px 0px 0px;
+    padding: 8px 40px 8px 8px;
+    
+	}
+
+.capbox-inner {
+	font: bold 11px arial, sans-serif;
+	color: #000000;
+	background-color: #DBF3BA;
+	margin: 5px auto 0px auto;
+	padding: 3px;
+	border-radius: 4px;
+	}
+
+#CaptchaDiv {
+	font: bold 17px verdana, arial, sans-serif;
+	font-style: italic;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding: 4px;
+	border-radius: 4px;
+	}
+
+.section-login {
+    margin-top: 100px;
+}
+
+.start-sesion {
+    text-decoration: none;
+    color: white;
+}
+
+.start-sesion:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*=============================Seccion Footer=========================*/
+
+.links-footer {
+	font-size: 1.7rem;
+}
+.links-footer span{
+	font-size: 1.1rem;
+}
+
+
+/*===========================Seccion Contacto=========================*/
+
+.faq-link {
+    color: #3f3fb5;
+}
+
+/* ========================== Magin Fixes ===============================*/
+
+
+.regist-margin-fix {
+    text-align: center;
+    width: inherit;
+    margin-bottom: auto;
+}
+
+@media (max-width: 767px) {
+.ul-navbar {
+    text-align: end;
+    margin-left:30%; 
+    padding: inherit;
+}
+.img-navbar {
+    margin-left: auto;
+}
+.img-navbar-profile {
+    margin-left: auto;
+}
+.serch-margin-fix {
+    margin-left:auto;
+}
+.info-margin-fix {
+    margin-left: auto;
+}
+.button-margin-fix {
+    margin-left: auto;
+    padding: unset;
+    max-width: 88px;
+}
+}
+
+/*============================ Ultimas Noticias=====================*/
+
+
+.news-cards-title {
+	font-size: 1.4rem;
+}
+
+.news-cards-autor {
+	font-size: 0.8rem;
+}
+
+.news-cards-text {
+	font-size: 0.9rem;
+}
+
+.news-drop {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.news-card:hover .news-drop {
+    height: auto;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+.ad-ultimas-fixed {
+ position: fixed;
+ float: left;
+ width: 15%;
+ height: 530px;
+ top: 18vh;
+}
+
+.margin-main-ultimas {
+    margin-bottom: 150px;
+}
+/* ==============================Teatro==================================== */
+
+
+.button-share-coment:hover {
+    background: #FFF;
+    color: #000;
+    }
+
+
+
+    .img-politica {
+        height: 200px;
+        width: 200px;
+        background: lightblue;
+    }
+
+    .text-img {
+      text-align: end;
+      position: relative;
+    }
+
+
+     /* =============================POLITICA============================== */
+
+   
+.contenedor-noticias {
+
+
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
+ }
+ 
+ .contenedor-noticias img{
+ 
+     width: 100%;
+     height: 100%;
+     
+ }
+ 
+ 
+ .texto-encima{
+ 
+     position: absolute;
+     bottom: 0;
+     margin-bottom: 10px;
+     width: 100%;
+     height: 165px;
+     overflow: hidden;
+     
+     
+ 
+     
+ }
+ 
+ 
+ .contenedor-noticias:hover img {
+ 
+     -webkit-transform:scale(1.3);transform:scale(1.3);
+     transition: 0.5s;
+ }
+ 
+ .contenedor-noticias {
+     overflow:hidden;
+ }
+ 
+ .texto-encima a{
+ 
+     text-decoration: none;	
+     
+ }
+ 
+ .text-news-1{
+ 
+     height: 100px;
+     overflow: hidden;
+ }
+ 
+ 
+ 
+ .btn-news {
+ 
+     display: inline-block;
+     font-weight: 400;
+     color: #212529;
+     text-align: center;
+     vertical-align: middle;
+     user-select: none;
+     color: white;
+     padding: .375rem .75rem;
+     font-size: 1rem;
+     line-height: 1.5;
+     border-radius: .25rem;
+     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+ }
+
+ .btn-news:hover {
+     background: #FFF;
+     color: #000;
+ } 
+ 
+ 
+ 
+ 
+ @media (min-width: 0px) and (max-width: 576px)  { 
+ 
+  
+  .text-news-1 a{
+ 
+      font-size: 15px;
+  }
+ 
+ 
+  .text-news-1{
+ 
+      height: 80px;
+  }
+ 
+ 
+ 
+ .btn-news {
+     
+    padding: .150rem 0.1rem;
+     font-size: 0.6rem;
+     width: 5.5rem;
+    
+ }
+  }
+ 
+ 
+ @media (min-width: 576px) and (max-width: 768px)  { 
+ 
+ .btn-news {
+     
+    padding: .150rem 0.1rem;
+     font-size: 0.8rem;
+     width: 6.5rem;
+    
+  }
+   }
+ 
+ 
+ 
+  @media (min-width: 768px) and (max-width: 992px)  { 
+ 
+ 
+ .text-news-1{
+ 
+      height: 90px;
+  }
+ 
+ 
+ 
+ 
+ .btn-news {
+     
+      padding: .150rem 0.1rem;
+     font-size: 0.6rem;
+     width: 5rem;
+    
+ }
+  }
+ 
+ 
+ 
+ @media (min-width: 992px) {
+ 
+ .text-news-1{
+ 
+      height: 90px;
+  }
+ 
+ 
+ .btn-news {
+     
+     padding: .150rem 0.1rem;
+     font-size: 0.8rem;
+     width: 6.5rem;
+    
+ }
+  }
+ 
+ 
+  .img-AD {
+    background-image: url(../img/black-friday.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+ 
+.img-AD-dos {
+    background-image: url(../img/mujer-descuento.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+/* =======================Pagina en construccion========================= */
+
+
+.page-under-construction {
+    font-size: 40px;
+    text-align: center;
+    color: #d40000;
+}
+
+.engranaje {
+    width: 100%;
+}
+
+
+.engranaje-img {
+    color: #000;
+    background-image: url(../img/gear.png);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 10%;
+    animation: myframes linear 3s infinite;
+    transform-origin: 50% 50%;
+    float: left;
+    position: relative;
+    left: 31%;
+    top: 31%; 
+}
+
+@keyframes myframes {
+   0% {
+       transform:  rotate(0deg);
+   }
+   100% {
+       transform:  rotate(360deg);
+   }
+}
+
+
+.tuerca {
+    animation: myframes linear 5s infinite;
+    transform-origin: 50% 50%;
+    float: left;
+    position: relative;
+    left: 12%;
+    rotate: 50%;
+}
+
+.tuerca2 {
+    animation: myframes linear 5s infinite;
+    transform-origin: 50% 50%;
+    animation-direction: reverse;
+    float: left;
+    position: relative;
+    left: 10%;
+    
+}
+
+
+/* =================================PAGINA DE RECUPERAR PASSWORD================================= */
+
+
+.lost-pass {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+/* ==============================NOTICIA TEATRO==================================================== */
+
+
+    
+.shape-social {
+        clip-path: circle(50% at 50% 50%);
+}
+    
+.not-teatro-text:first-letter { 
+        font-size: 200%;
+        font-weight: bolder;
+        color: #9e2424;
+}
+
+.btns-fixed {
+    z-index: 100;
+    font-size: 1.5rem;
+}

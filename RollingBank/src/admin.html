@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/97468240eb.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <title>RollingBank</title>
+  </head>
+  <body>
+  <header> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Admin</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">     
+      </div>
+    </nav>
+  </header> 
+  <main>
+    <div class="text-center pt-3"> 
+      <h3>Datos de los usuarios</h3>
+    </div>
+    <div id="registros" class="container mt-5 mb-5 w-50"></div>
+    <div id="showAdmin" class="container mt-5 mb-5 w-50"></div>
+    <div id="prestamo" class="container mt-5 mb-5 w-50"></div>
+    <div id="showAdminpp" class="container mt-5 mb-5 w-50"></div>
+    <div id="showTjNoUser" class="container mt-5 mb-5 w-50"></div>
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead class="thead-light">
+          <tr> 
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido</th>
+              <th scope="col">Genero</th>
+              <th scope="col">DNI</th>
+              <th scope="col">Usuario</th>
+              <th scope="col">Correo</th>
+              <th scope="col">Dirección</th>
+              <th scope="col">Celular</th>
+              <th scope="col">Estado Civil</th>
+              <th scope="col">Tarjeta</th>
+          </tr>
+        </thead>
+        <tbody id="principal"></tbody>
+      </table>
+      <div class="text-center py-3"> 
+        <h3>Prestamos de usuarios</h3>
+      </div>
+      <section>
+        <table class="table table-hover">
+            <thead class="thead-light">
+              <tr>
+                  <th scope="col">Informacion Personal</th>
+                  <th scope="col">Solicitante</th>
+                  <th scope="col">Monto Total</th>
+                  <th scope="col">Plazo</th>
+                  <th scope="col">Cuota</th>
+              </tr>
+            </thead>
+            <tbody id="tablaPrestamo"></tbody>
+        </table>
+    </section><hr>
+    <section>
+      <h3>Solicitudes de tarjetas de usuarios no Registrados</h3>
+        <table class="table table-hover">
+            <thead class="thead-light">
+              <tr> 
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Apellido</th>
+                  <th scope="col">Genero</th>
+                  <th scope="col">DNI</th>
+                  <th scope="col">Correo</th>
+                  <th scope="col">Dirección</th>
+                  <th scope="col">Celular</th>
+                  <th scope="col">Estado Civil</th>
+              </tr>
+            </thead>
+            <tbody id="noUserTable"></tbody>
+          </table>
+    </section>
+  </div>
+  <div class="modal fade" id="modalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Info del Usuario</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="contenidoInfo"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

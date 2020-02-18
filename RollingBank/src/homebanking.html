@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/97468240eb.js"></script>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <title>RollingBank</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-blue text-capitalize">
+          <div class="container">
+            <a class="navbar-brand margin-navbar-a" href="index.html"><img src="/assets/images/LogoMakr_3KoMDG.png" alt="" style="width: 180px; height: 55px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <div id="buttonUsuario" class="dropdown dropleft dropdown-size"></div>
+              </ul>
+            </div>      
+        </div>
+      </nav>
+    </header>
+                
+    <!---------- Fin del Header ------->
+
+  <div class="container py-4 text-center"> 
+    <h2 id="SaludoHomebanking"></h2>
+  </div>
+    <main class="container HomeBanking">
+        <section class="HomeBankingOptions">
+            <div class="row">
+              <div class="col-12 col-lg-4 my-4">
+                <article class="card card-hb card-hb-1 d-flex  align-items-center" id="card"></article>
+              </div>
+              <div class="col-12 col-lg-4 my-4">
+                <article class="card card-hb card-hb-1">
+                  <div class="card__img text-center">
+                    <div>
+                      <h3 class="pt-3" style="color: #1cc88a">Prestamos</h3>
+                    </div>
+                    <div class="text-center pt-3">
+                      <i class="fas fa-hand-holding-usd" style="font-size: 100px; color: #c0c0c0"></i>
+                    </div>
+                  </div>
+                  <div class="card__info">
+                    <button type="button" id="btnVerPrestamos" class="btn btn-outline-warning"> Ver mis Prestamos</button>       
+                  </div>
+                </article>
+              </div>
+           <div class="col-12 col-lg-4 my-4">     
+              <article class="card card-hb card-hb-1">
+                <div class="card__img text-center">
+                  <div>
+                    <h3 class="pt-3" style="color: #1cc88a">Caja de ahorro</h3>
+                  </div>
+                  <div class="text-center pt-3">
+                    <i class="fas fa-piggy-bank" style="font-size: 100px; color: #c0c0c0"></i>
+                  </div>
+                </div>
+                  <div class="card__info">
+                    <button type="button" class="btn btn-outline-warning" id="btnVerCajaAhorro"> Ultimos Movimientos</button>    
+                  </div>
+              </article>
+            </div>
+          </div>
+        </section>
+                    
+              
+                  
+        <!--==========================================-->
+        <!--===========Seccion 2=============-->
+        <!--==========================================-->
+
+        
+
+        <section id="tablePrestamos" class="row animacion-container mt-4 d-none">    
+         <div class="container  text-center mb-5">
+          <div id="sinPrestamoTitulo"></div>
+          <div id="prestamoPendiente"></div>
+          <div>
+            <button class="btn btn-outline-warning mt-3" id="btnSolicitarPrestamo" data-toggle="modal" data-target="#exampleModal">Solicitar prestamo personal</button>
+          </div>
+         </div>          
+          <table  class="table table-hover">
+            <thead class="thead bg-light">
+              <tr>
+                <th style="font-size: 1.2rem" scope="col">Titular</th>
+                <th style="font-size: 1.2rem" scope="col">Monto Total</th>
+                <th style="font-size: 1.2rem" scope="col">Plazo</th>
+                <th style="font-size: 1.2rem" scope="col">Cuota</th>
+              </tr>
+            </thead>
+            <tbody id="bodyTableUno" class="tbodyTable"></tbody>
+          </table>
+        </section>
+        <section class="row animacion-container  mt-4">                
+          <table id="tableCajaAhorro" class="table d-none">
+            <thead class="thead bg-light">
+              <tr>
+                <th  style="font-size: 1.2rem" scope="col">Solicitante</th>
+                <th  style="font-size: 1.2rem" scope="col">Monto total</th>
+              </tr>
+            </thead>
+            <tbody id="bodyTableCajaAhorro"></tbody>
+          </table>
+        </section>
+        <section class="row animacion-container  mt-4">                
+          <table id="tableTarjeta" class="table d-none">
+            <thead class="thead bg-light">
+              <tr>
+                <th  style="font-size: 1.2rem" scope="col">Numero de tarjeta</th>
+                <th  style="font-size: 1.2rem" scope="col">Categoria</th>
+                <th  style="font-size: 1.2rem" scope="col">Margen</th>
+              </tr>
+            </thead>
+            <tbody id="bodyTableTarjeta"></tbody>
+          </table>
+        </section>
+        <!--==========================================-->
+        <!--===========Seccion 3=============-->
+        <!--==========================================-->
+        <section class="HomeBankingAccess">
+          <h3 class="my-4">Accesos Directos</h3>
+          <div class="card-deck m-3">
+            <div class="card border-success accesos">
+              <a style="text-decoration: none" href="">
+                <div class="card-header">
+                  <i class="fas fa-mobile-alt"></i>
+                  <h5 class="card-title text-muted">Pago de servicios e impuestos</h5> 
+                </div>
+                <div class="card-body links">
+                  <h6>Proximamente..</h6>
+                </div>
+              </a>
+            </div>      
+            <div class="card border-success accesos">
+              <a style="text-decoration: none" href="">
+                <div class="card-header">
+                  <i class="fas fa-comment-dollar"></i>
+                  <h5 class="card-title text-muted">Transferencias</h5>  
+                </div>
+                <div class="card-body links">
+                  <h6>Proximamente..</h6>
+                </div>
+              </a>
+            </div>  
+            <div class="card border-success accesos">
+              <a style="text-decoration: none" href="">
+                <div class="card-header">
+                  <i class="fas fa-question-circle"></i>
+                  <h5 class="card-title text-muted">Plazo Fijo</h5>   
+                </div>
+                <div class="card-body links">
+                  <h6>Proximamente..</h6>
+                </div>
+              </a>
+            </div>  
+            <div class="card border-success accesos">
+              <a style="text-decoration: none" href="">
+                <div class="card-header">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <h5 class="card-title text-muted">Comprobantes</h5> 
+                </div>
+                <div class="card-body links">
+                  <h6>Proximamente..</h6>
+                </div>
+              </a>
+            </div>   
+            </div>
+        </section>
+    </main>
+<!--==========================================-->
+<!--===========Modales=============-->
+<!--==========================================-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Solicita tu prestamo personal Online</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <label for="exampleInputEmail1">Monto a solicitar</label>
+          <select name="" id="montopp" class="form-control">
+            <option value="10000">$10000</option>
+            <option value="25000">$25000</option>
+            <option value="50000">$50000</option>
+            <option value="100000">$100000</option>
+          </select>
+          <label for="exampleInputEmail1">Cantidad de cuotas</label>
+          <select name="" id="plazopp" class="form-control">
+            <option >12</option>
+            <option >24</option>
+            <option >36</option>
+            <option >60</option>
+          </select>
+          <label for="exampleInputEmail1">Cuota mensual</label>
+          <input id="cuotaPrecio" type="text" class="form-control" readonly>            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button id="btnSolicitarPP"type="button" class="btn btn-primary" data-dismiss="modal">Solicitar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--==========================================-->
+<!--===========Fin del Main=============-->
+<!--==========================================-->
+<footer class="bg-blue">
+    <div class="container">
+        <section class="row pt-4">
+            <div class="col-12 col-md-3  pt-4 pt-md-4 text-center text-md-left">
+                <a class="navbar-brand margin-navbar-a" href="index.html"><img src="/assets/images/LogoMakr_3KoMDG.png" alt="" style="width: 220px; height: 70px;"></a>
+            </div>
+            <div class="pt-4 text-center text-lg-left col-lg-3">
+                <ul class="">
+                    <h4 class="text-white">Informacion</h4>
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informacionfooter">Codigo practicas bancarias</a>
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informacionfooter">Defensa del consumidor</a> 
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informacionfooter">Proteccion de datos</a>
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informacionfooter">Politica ambiental 2019</a>
+                </ul>
+            </div>
+            <div class="pt-4 text-center text-lg-left col-lg-3">
+                <ul class="">
+                    <h4 class="text-white">Informes</h4>
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informesfooter">Cotización de acciones</a>
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informesfooter">Informes de mercados</a> 
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informesfooter">Código de conducta</a>
+                    <a class="nav-link-personalized-one nav-link-hover" href="#infopage.html#informesfooter">Disciplina de mercados</a>
+                </ul>
+            </div>
+                <div class="pt-4 text-center text-lg-left col-lg-3">
+                    <ul class="">
+                        <h4 class="text-white">Aviso Legal</h4>
+                        <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#avisolegalfooter">Informacion para el usuario</a>
+                        <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#avisolegalfooter">Sueldos</a> 
+                    </ul>
+                </div>
+            <!-- <div class="col-12 col-md-3 pt-2 pb-4 pb-md-0 text-center text-md-right">
+            <a href="" class="mr-3"> <i class="fab fa-instagram social-icon"></i>  </a>
+            <a href="" class="mr-3"> <i class="fab fa-twitter-square social-icon "></i></a>
+            <a href="" class="mr-3"> <i class="fab fa-facebook-square social-icon"></i></a>
+            <a href=""><i class="fab fa-youtube-square social-icon"></i></a>
+            </div> -->
+        </section>
+        <hr style="background-color:rgb(177, 177, 177)">
+        <div class="row pb-5">
+            <div class="col-6">
+                <p class="text-white">© Copyright 2019 RollingBank - All Rights Reserved</p>
+            </div>
+            <div class="col-6 text-right">
+                <a href="https://www.facebook.com"> <i class="fab fa-facebook-square social-icon mr-3"></i></a>
+                <a href="https://twitter.com" class="mr-3"> <i class="fab fa-twitter-square social-icon "></i></a>
+                <a href="https://www.instagram.com" class="mr-3"> <i class="fab fa-instagram social-icon"></i>  </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+ 

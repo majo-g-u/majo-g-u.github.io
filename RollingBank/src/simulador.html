@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/97468240eb.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <title>RollingBank</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-blue text-uppercase">
+            <div class="container">
+              <a class="navbar-brand margin-navbar-a" href="index.html"><img src="./assets/images/LogoMakr_3KoMDG.png" alt="" style="width: 180px; height: 55px;"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <a class="nav-link-personalized nav-link-hover" href="#seccion_one_target"><i class="far fa-credit-card pr-1"></i> Tarjetas</a>
+                    <a class="nav-link-personalized nav-link-hover" href="#seccion_two_target"><i class="fas fa-wallet pr-1"></i> Cuentas</a> 
+                    <a class="nav-link-personalized nav-link-hover" href="#seccion_three_target"><i class="fas fa-money-check-alt pr-1"></i> Prestamos</a>
+                    <a href="#seccion_four_target"><button class="btn btn-outline-light btn-personalizado width-contact d-none d-lg-block btn-size" ><i class="fas fa-user pr-1"></i>Contacto</button></a>
+                    <a class="nav-link-hover nav-link-personalized d-block d-lg-none"  href="#seccion_four_target"><i class="fas fa-user pr-1"></i>Contacto</a>
+                    <div class="dropdown dropleft dropdown-size">
+                      <button  class="btn-size btn btn-success  dropdown-toggle ml-lg-3 mt-2 mt-lg-0 btn-personalizado text-uppercase" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          HomeBanking
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                          <form class="dropdown-item mt-3">
+                            <div class="form-group">
+                                  <select class="form-control">
+                                  <option value="">DNI</option>
+                                  <option value="">LC</option>
+                                  <option value="">LE</option>
+                                  <option value="">PASAPORTE</option>
+                                  </select>
+                              <input id="currentDni" type="number" class="form-control mt-2" placeholder="N° DNI/LC/LE/PS">
+                              <input id="currentPassword" type="password" class="form-control mt-2" placeholder="Contraseña">
+                              <small id="emailHelp" class="form-text text-muted mb-3">Todos los datos de registro son obligatorios.</small> 
+                              <div class="">
+                                <button id="ingresarNavbar" class="btn btn-block btn-primary text-uppercase">Ingresar</button>            
+                                <a style="text-decoration: none;" href="registro.html" class="btn btn-outline-success btn-block mt-2">Registrarse</a>
+                              </div>
+                              <a href="olvidemicontraseña.html" class=" d-block text-center mt-2">Olvidé mi contraseña</a>
+                          </div>
+                        </form>
+                    </div>
+                  </div>
+              </ul>
+            </div>
+        </div>
+      </nav>
+
+    </header>
+<!--==========================================-->
+<!--===========Fin del header=============-->
+<!--==========================================-->
+
+
+    <!--==========================================-->
+    <!--===========Seccion 1=============-->
+    <!--==========================================-->
+<div  class="contacto backgroundSimulador">
+
+  <h2 class="text-white pt-5 ml-3 pb-3">
+    Sacá tu prestamos personal, <br>
+    tasa fija en pesos y desde tu casa!
+  </h2>
+<section class="container py-5"  id="seccion_four_target">
+    <div class="row ">
+      <div class="col-12 col-lg-6 mt-3 pb-3">
+          <div class="card">
+            <div class="text-center p-5">
+              <p class="h4 mb-4">Calculá tu cuota!</p>
+              <p style="font-size: 1rem;">Simular tu prestamo es muy facil, elegí el monto, las cuotas y  tu ingreso neto mensual</p>
+              <p>
+                  <a href="" target="_blank">Tasa fija y en pesos!</a>
+              </p>
+              <input type="number" id="simulador" class="form-control mb-4" placeholder="Hasta $100.000">
+              <select id="simuladorPlazo" class="form-control mb-4" name="" id="cantidadCuotaspp">
+                  <option value="12">12 Cuotas</option>
+                  <option value="24">24 Cuotas</option>
+                  <option value="36">36 Cuotas</option>
+                  <option value="60">60 Cuotas</option>
+              </select>
+              <p class="mb-3 text-center" style="font-size: 0.9rem;">¿Sos cliente de RollingBank?</p>    
+                <select id="cliente" class="form-control mb-4" name="" id="cantidadCuotaspp">
+                  <option value="cliente">Si, soy cliente</option>
+                  <option value="sueldo">Si, y acredito mi sueldo en RollingBank</option>
+                  <option value="nocliente">No, no soy cliente</option>
+              </select>
+              <button id="simulacion" class="btn btn-info btn-block" type="submit">Simular</button>
+            </div>
+          </div>
+        </div>
+      <div id="resultadoSimulacion"class="d-none col-md-12 col-lg-6 text-center mt-5 mt-lg-3"> 
+        <div class="card" style="height: 503px;">
+            <div class="text-left  p-5">
+              <p class="h4 mt-1 mb-2 ">Detalle de tu prestamo</p>
+              <table class="table table-striped mt-5">
+                <thead>
+                  <tr>
+                    <th scope="row">Monto solicitado</th>
+                    <th id="montodetalle" scope="row"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Cuota promedio</th>
+                    <td id="cuotadetalle"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Plazo</th>
+                    <td id="plazodetalle">12 meses</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tasa nominal anual (TNA)</th>
+                    <td id="tasaAnual"></td>
+                  </tr>
+                  
+                  <tr>
+                    <th  scope="row">Costo financiero tota sin IVA</th>
+                    <td id="costoFinanciero"></td>
+                  </tr>
+            
+                  <tr>
+                    <th scope="row">Costo financiero tota con IVA</th>
+                    <td id="costoFinancieroIva"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      <div id="requisitosPrestamo" class="col-md-12 col-lg-6 text-center mt-5 mt-lg-3 ">
+          <div class="card" style="height: 503px;">
+              <div class="text-left  p-5" action="">
+                <div class="d-flex">
+                  <i class="fas fa-user-tie pr-2" style="font-size: 2rem; color:rgb(83, 83, 83);""></i> <p class="h4 mt-1 mb-2 ">Requisitos para empleados
+                      en relación de dependencia</p>
+                </div>
+                <ul class="text-left mt-4">
+                    <li style="font-size: 0.9rem;">Ser argentino o residente con DNI de entre 18 y 73 años.</li>
+                    <li style="font-size: 0.9rem;">Ingresos mensuales netos superiores a $15.000.</li>
+                    <li style="font-size: 0.9rem;">Antigüedad laboral mínima de 6 meses</li>
+                    <li style="font-size: 0.9rem;">Buenos antecedentes de pago en los últimos 2 años.</li>
+                </ul>
+                <div class="d-flex mt-4"> 
+                    <i class="fas fa-user-check pr-2" style="font-size: 2rem; color:rgb(83, 83, 83);"></i>  <p class="h4 text-left mt-1">Beneficios</p>
+                </div>
+                <ul class="text-left mt-4">
+                  <li style="font-size: 0.9rem;">Sin costo de otorgamiento</li>
+                  <li style="font-size: 0.9rem;">Tasa preferencial fija y en pessos</li>
+                  <li style="font-size: 0.9rem;">Cancelación total o parcial</li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!--==========================================-->
+<!--===========Fin del Main=============-->
+<!--==========================================-->
+<footer class="bg-blue">
+  <div class="container">
+      <section class="row pt-4">
+          <div class="col-12 col-md-3  pt-4 pt-md-4 text-center text-md-left">
+              <a class="navbar-brand margin-navbar-a" href="index.html"><img src="./assets/images/LogoMakr_3KoMDG.png" alt="" style="width: 220px; height: 70px;"></a>
+          </div>
+          <div class="pt-4 text-center text-lg-left col-lg-3">
+              <ul class="">
+                  <h4 class="text-white">Informacion</h4>
+                  <a class="nav-link-personalized-one nav-link-hover" href="infopage.html">Codigo practicas bancarias</a>
+                  <a class="nav-link-personalized-one nav-link-hover" href="infopage.html">Defensa del consumidor</a> 
+                  <a class="nav-link-personalized-one nav-link-hover" href="infopage.html">Proteccion de datos</a>
+                  <a class="nav-link-personalized-one nav-link-hover" href="#infopage.html">Politica ambiental 2019</a>
+              </ul>
+          </div>
+          <div class="pt-4 text-center text-lg-left col-lg-3">
+              <ul class="">
+                  <h4 class="text-white">Informes</h4>
+                  <a class="nav-link-personalized-one nav-link-hover" href="infopage.html">Cotización de acciones</a>
+                  <a class="nav-link-personalized-one nav-link-hover" href="infopage.html">Informes de mercados</a> 
+                  <a class="nav-link-personalized-one nav-link-hover" href="infopage.html">Código de conducta</a>
+                  <a class="nav-link-personalized-one nav-link-hover" href="#infopage.html">Disciplina de mercados</a>
+              </ul>
+          </div>
+              <div class="pt-4 text-center text-lg-left col-lg-3">
+                  <ul class="">
+                      <h4 class="text-white">Aviso Legal</h4>
+                      <a class="nav-link-personalized-one nav-link-hover" href="infopage.html">Informacion para el usuario</a>
+                      <a class="nav-link-personalized-one nav-link-hover" href="infopage.html">Sueldos</a> 
+                  </ul>
+              </div>
+          <!-- <div class="col-12 col-md-3 pt-2 pb-4 pb-md-0 text-center text-md-right">
+          <a href="" class="mr-3"> <i class="fab fa-instagram social-icon"></i>  </a>
+          <a href="" class="mr-3"> <i class="fab fa-twitter-square social-icon "></i></a>
+          <a href="" class="mr-3"> <i class="fab fa-facebook-square social-icon"></i></a>
+          <a href=""><i class="fab fa-youtube-square social-icon"></i></a>
+          </div> -->
+      </section>
+      <hr style="background-color:rgb(177, 177, 177)">
+      <div class="row pb-5">
+          <div class="col-6">
+              <p class="text-white">© Copyright 2019 RollingBank - All Rights Reserved</p>
+          </div>
+          <div class="col-6 text-right">
+              <a href="https://www.facebook.com"> <i class="fab fa-facebook-square social-icon mr-3"></i></a>
+              <a href="https://twitter.com" class="mr-3"> <i class="fab fa-twitter-square social-icon "></i></a>
+              <a href="https://www.instagram.com" class="mr-3"> <i class="fab fa-instagram social-icon"></i>  </a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+ 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</body>
+</html>

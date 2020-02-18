@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/97468240eb.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <title>RollingBank</title>
+  </head>
+  <body class="bg-imagen">
+  
+    <main>
+        <div class="container w-50 py-5"> 
+            <div class="card">
+                <div class="card-body">
+                    <form class="p-3" action="#0" method="post">
+                        <p class="h4 mb-4 text-center">Generá tu usuario y clave</p>
+                        <div class="text-center"> 
+                            <i class="fas fa-user-circle text-center pb-4" style="font-size: 80px; color: rgb(224, 224, 224)"></i>
+                        </div>
+                        <div class="form-group mb-4">
+                                
+                            <input type="text" class="form-control form-control-two btn-border" id="nombre" placeholder="Nombre" required="required">
+                        </div>
+                        <div class="form-group mb-4">            
+                            <input type="text" class="form-control form-control-two btn-border" id="apellido" placeholder="Apellido" required="required">
+                        </div>
+                        <div class="form-group  mb-4">
+                            <select id="genero" class="form-control form-control-two btn-border" required="required">
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                            </select>         
+                        </div>
+                        <div class="form-group  mb-4">
+                            <small role="alert" id="alertDanger" class="alert alert-danger d-none">El DNI que estas ingresando ya está registrado</small>
+                            <input type="number" class="form-control form-control-two btn-border" id="dni" placeholder="Ingresa tu DNI" required="required">    
+                        </div>
+                        <div class="form-group has-success  mb-4">
+                            <small role="alert" id="alertDangerDos" class="alert alert-danger d-none">El Nombre de usuario que estas ingresando ya está registrado</small>
+                            <input type="text"  class="form-control form-control-two btn-border" id="nombreusuario" placeholder="Nombre de usuario" required="required">
+                            <div class="valid-feedback"></div>
+                        </div>
+                        <div class="form-group has-success  mb-4">
+                            <small role="alert" id="alertDangerTres" class="alert alert-danger d-none">El Email ya está registrado</small>
+                            <input type="email" class="form-control form-control-two btn-border" id="correo" placeholder="Correo electrónico">
+                            <div class="valid-feedback"></div> 
+                        </div>
+                        <div class="form-group  mb-4">
+                            <input type="password" class="form-control form-control-two btn-border" id="contraseña" placeholder="Contraseña" required="required">
+                        </div>
+                        <div class="form-group has-success  mb-4">
+                            <input type="password" class="form-control form-control-two btn-border" id="repetir" placeholder="Repetir contraseña">
+                            <div class="valid-feedback"></div>
+                        </div>
+                        <div class="form-group  mb-4">
+                            <input type="text" class="form-control form-control-two btn-border" id="direccion" placeholder="Por ejemplo: Av 9 de julio 700">
+                        </div>
+                        <div class="form-group  mb-4">
+                            <input type="number" class="form-control form-control-two btn-border" id="celular" placeholder="Cód. área + Nro. Ej: 011 - 155456523">
+                        </div>
+                        <div class="form-group  mb-4">
+                            <select id="estadocivil" class="form-control form-control-two btn-border">
+                                <option value="soltero">Soltero/a</option>
+                                <option value="casado">Casado/a</option>
+                                <option value="divorciado">Divorciado/a</option>
+                                <option value="viudo">Viudo/a</option>
+                            </select>
+                        </div>
+                        <button id="evento" type="button" class="btn btn-lg btn-success btn-block text-uppercase" type="submit">Registrarme</button>
+                        <button id="eventVolver" type="button" class="btn  btn-lg btn-primary btn-block  text-uppercase" type="submit">Volver</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    </body>
+    </html>
+
+

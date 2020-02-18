@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/97468240eb.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <title>RollingBank</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-blue text-uppercase">
+            <div class="container">
+                 <a class="navbar-brand margin-navbar-a" href="index.html"><img src="./assets/images/LogoMakr_3KoMDG.png" alt="" style="width: 180px; height: 55px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <a class="nav-link-personalized nav-link-hover" href="#seccion_one_target"><i class="far fa-credit-card pr-1"></i> Tarjetas</a>
+                        <a class="nav-link-personalized nav-link-hover" href="#seccion_two_target"><i class="fas fa-wallet pr-1"></i> Cuentas</a> 
+                        <a class="nav-link-personalized nav-link-hover" href="#seccion_three_target"><i class="fas fa-money-check-alt pr-1"></i> Prestamos</a>
+                        <a href="#seccion_four_target"><button class="btn btn-outline-light btn-personalizado width-contact d-none d-lg-block btn-size" ><i class="fas fa-user pr-1"></i>Contacto</button></a>
+                        <a class="nav-link-hover nav-link-personalized d-block d-lg-none"  href="#seccion_four_target"><i class="fas fa-user pr-1"></i>Contacto</a>
+                        <div class="dropdown dropleft dropdown-size">
+                            <button  class="btn-size btn btn-success  dropdown-toggle ml-lg-3 mt-2 mt-lg-0 btn-personalizado text-uppercase" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            HomeBanking
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <form class="dropdown-item mt-3">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option value="">DNI</option>
+                                            <option value="">LC</option>
+                                            <option value="">LE</option>
+                                            <option value="">PASAPORTE</option>
+                                        </select>
+                                        <input id="currentDni" type="number" class="form-control mt-2" placeholder="N° DNI/LC/LE/PS">
+                                        <input id="currentPassword" type="password" class="form-control mt-2" placeholder="Contraseña">
+                                        <small id="emailHelp" class="form-text text-muted mb-3">Todos los datos de registro son obligatorios.</small> 
+                                        <div class="">
+                                            <button id="ingresarNavbar" class="btn btn-block btn-primary text-uppercase">Ingresar</button>  
+                                            <a style="text-decoration: none;" href="registro.html" class="btn btn-outline-success btn-block mt-2">Registrarse</a>
+                                        </div>
+                                        <a href="olvidemicontraseña.html" class=" d-block text-center mt-2">Olvidé mi contraseña</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                     </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!--==========================================-->
+<!--===========Fin del header=============-->
+<!--==========================================-->
+<main>
+
+
+<!--==========================================-->
+<!--===========Seccion 1=============-->
+<!--==========================================-->
+
+
+<section class="" id="seccion_one_target">
+    <div class="bd-example ">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators d-none d-lg-flex">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+        <div class="carousel-inner ">
+            <div class="carousel-item active ">
+                <img src="./assets/images/family.jpg" class="d-block w-100" alt="...">
+                <div class="card text-center color-card-carrusel d-block d-sm-none">
+                    <div class="card-body">
+                        <h6 class="card-title card-title-color font-weight-bold text-uppercase" style="font-size: calc(1rem + 1vw);">1 año Bonificada</h6>
+                        <hr class="d-none d-md-block">
+                        <p class="card-text d-block d-md-none" style="color: #041833; font-size: 16px;" >Pedila 100% Online y disfruta de los beneficios</p>
+                        <p class="card-text d-none d-md-block" style="color: #041833; font-size: 16px;" >Solicita tu tarjeta RollingBank sacala 100% online a través de homebanking</p>
+                        <a href="#"  data-toggle="modal" data-target="#modalSolicitaTarjeta" class="btn btn-success btn-block text-uppercase">Pedí tu tarjeta</a>
+                        <a href="infopage.html" class="btn btn-primary btn-block pt-1 text-uppercase">Conocé más</a>
+                    </div>
+                </div>
+                <div class="carousel-caption posicion-slider d-none d-sm-block">
+                    <div class="descripcion">
+                        <div class="card text-center color-card-carrusel">
+                            <div class="card-body">
+                                <h6 class="card-title card-title-color font-weight-bold text-uppercase" style="font-size: calc(0.8rem + 0.8vw);">1 año Bonificada</h6>
+                                <hr class="d-none d-md-block">
+                                <p class="card-text d-block d-md-none " style="color: #041833; font-size: 16px;" >Pedila 100% Online y disfruta de los beneficios</p>
+                                <p class="card-text d-none d-md-block " style="color: #041833; font-size: 16px;" >Solicita tu tarjeta RollingBank sacala 100% online a través de homebanking</p>
+                                <a href="#"  data-toggle="modal" data-target="#modalSolicitaTarjeta" class="btn btn-success btn-block text-uppercase">Pedí tu tarjeta</a>
+                                <a href="infopage.html" class="btn btn-primary btn-block pt-1 text-uppercase">Conocé más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/girl.jpg" class="d-block w-100 img-fluid" alt="...">
+                <div class="card text-center color-card-carrusel d-block d-sm-none">
+                    <div class="card-body">
+                        <h6 class="card-title card-title-color font-weight-bold" style="font-size: calc(1rem + 1vw);">Este verano disfrutá</h6>
+                        <hr class="d-none d-md-block">
+                        <p class="card-text d-block d-md-none" style="color: #041833; font-size: 16px;">Prestamos personales a Tasa fija en pesos hasta 8 sueldos</p>
+                        <p class="card-text d-none d-md-block" style="color: #041833; font-size: 16px;">Viví las vacaciones de tu vida con los prestamos personales de RollingBank. Tasa fija en pesos, podes sacar hasta 8 sueldos</p>
+                        <a href="registro.html" class="btn btn-success btn-block text-uppercase">Solicitar</a>
+                        <a href="simulador.html" class="btn btn-primary btn-block pt-1 text-uppercase">Simular tu préstamo</a>
+                    </div>
+                </div>
+                <div class="carousel-caption d-none d-sm-block posicion-slider">
+                    <div class="descripcion">
+                        <div class="card text-center color-card-carrusel">
+                            <div class="card-body">
+                                <h6 class="card-title card-title-color font-weight-bold" style="font-size: calc(1rem + 1vw);">Este verano disfrutá</h6>
+                                <hr class="d-none d-md-block">
+                                <p class="card-text d-block d-md-none" style="color: #041833; font-size: 16px;">Prestamos personales a Tasa fija en pesos hasta 8 sueldos</p>
+                                <p class="card-text d-none d-md-block" style="color: #041833; font-size: 16px;">Viví las vacaciones de tu vida con los prestamos personales de RollingBank.</p>
+                                <a href="registro.html" class="btn btn-success btn-block text-uppercase">Solicitar</a>
+                                <a href="simulador.html" class="btn btn-primary btn-block pt-1 text-uppercase">Simular tu préstamo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/girldos.png" class="d-block w-100 img-fluid" alt="...">
+                <div class="card text-center color-card-carrusel d-block d-sm-none">
+                    <div class="card-body">
+                        <h6 class="card-title card-title-color font-weight-bold" style="font-size: calc(1rem + 1vw);">HomeBanking</h6>
+                        <p class="card-text d-block d-md-none" style="color: #041833; font-size: 16px;">Crea tu cuenta homebanking y disfruta del banco desde tu casa</p>
+                        <p class="card-text d-none d-md-block" style="color: #041833; font-size: 16px;">Lleva el banco a tu casa, crea tu cuenta de homebankin para disfrutar de todos los beneficios del banco desde tu casa</p>
+                        <a href="#" class="btn btn-success btn-block text-uppercase">Ir a Homebanking</a>
+                        <a href="infopage.html" class="btn btn-primary btn-block pt-1 text-uppercase">Conocer más</a>
+                    </div>
+                </div>
+                <div class="carousel-caption d-none d-md-block d-none d-sm-block posicion-slider">
+                    <div class="descripcion">
+                        <div class="card text-center color-card-carrusel">
+                            <div class="card-body">
+                                <h6 class="card-title card-title-color font-weight-bold" style="font-size: calc(1rem + 1vw);">HomeBanking</h6>
+                                <p class="card-text d-block d-md-none" style="color: #041833; font-size: 16px;">Crea tu cuenta homebanking y disfruta del banco desde tu casa</p>
+                                <p class="card-text d-none d-md-block" style="color: #041833; font-size: 16px;">Lleva el banco a tu casa, crea tu cuenta de homebankin para disfrutar de todos los beneficios del banco desde tu casa</p>
+                                <a href="#" class="btn btn-success btn-block text-uppercase">Ir a Homebanking</a>
+                                <a href="infopage.html#homebankinginfo" class="btn btn-primary btn-block pt-1 text-uppercase">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <a class="carousel-control-prev d-none d-sm-flex" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"> <i class="fas fa-chevron-left" style="color:#02a5a59d; font-size: 1.2rem;"></i></span>
+            
+            </a>
+            <a class="carousel-control-next d-none d-sm-flex" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right" style="color:#02a5a59d; font-size: 1.2rem;"></i></span>
+            
+        </a>
+        </div>
+    </div>
+</section>
+
+<!--==========================================-->
+<!--===========Seccion 2=============-->
+<!--==========================================-->
+<section id="seccion_two_target" class="contacto py-5">
+    <div class="container">
+        <div class="text-center"> 
+            <h4 class="text-uppercase pt-3 pb-4">Beneficios diseñados para vos</h4>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4 d-flex justify-content-center pt-3">               
+                <div id="card-div-seccion" class="card transiciones">
+                    <img src="./assets/images/musica.jpg" class="card-img-top" alt="...">
+                    <div class="card-body-large">
+                        <h5 id="title-card-one" class="card-title">Descarga nuestra App</h5>
+                        <hr>
+                        <p class="card-text">Con la App de RollingBank disfrutá de beneficios en compras, sorteos y viajes</p>
+                        <a id="btnTransicionOne"href="https://play.google.com/store" class="btn btn btn-primary btn-transicion d-none d-lg-block">Conocer más</a>
+                        <a id="btnTransicionOne"href="infopage.html" class="btn btn-primary btn-block d-lg-none pt-2">Conocer más</a>
+                    </div>
+                </div>      
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center pt-3">
+                <div id="card-div-seccion-dos" class="card transiciones">
+                    <img src="./assets/images/construir.jpg" class="card-img-top" alt="...">
+                    <div class="card-body-large">
+                        <h5 id="card-title-dos" class="card-title-dos">Prestamos Personales</h5>
+                        <hr>
+                        <p class="card-text">Solicitar tu prestamo online es muy facil, desde tu casa y con tu celular.</p>
+                        <a id="btnTransicionTwo"href="infopage.html#prestamosinfo" class="btn btn-primary btn-transicion d-none d-lg-block">Conocer más</a>
+                        <a id="btnTransicionTwo"href="infopage.html#prestamosinfo" class="btn btn-primary btn-block d-lg-none pt-2">Conocer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center pt-3">
+                <div id="card-div-seccion-tres" class="card transiciones">
+                    <img src="./assets/images/auto.png" class="card-img-top" alt="...">
+                    <div class="card-body-large">
+                        <h5 id="card-title-tres" class="card-title-tres">Los mejores beneficios</h5>
+                        <hr>
+                        <p class="card-text">Aprovechá los fines de semanas de combustible 20% off</p>
+                        <a id="btnTransicionThree"href="infopage.html#beneficiosinfo" class="btn btn btn-primary btn-transicion d-none d-lg-block">Conocer más</a>
+                        <a id="btnTransicionThree"href="infopage.html#beneficiosinfo" class="btn btn-primary btn-block d-lg-none pt-2">Conocer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid bg-photo">
+    <div class="row">
+        <div class="col-md-6">           
+        </div>
+        <div class="col-md-6 text-center margin-top-center text-white">
+            <h3 class="text-uppercase sr-title">Online Banking</h3>
+            <p class="sr-text"style="font-size: 1.1rem">Registrate ahora y conocé los beneficios</p>
+            <a href="registro.html"><button class="btn btn-success btn-lg text-uppercase sr-button">Registrate</button></a>
+        </div>
+    </div>
+</section>
+<!--==========================================-->
+<!--===========Seccion 3=============-->
+<!--==========================================-->
+<section  id="seccion_three_target">
+    <div class="container-fluid">
+        <div class="row text-center">   
+            <div id="box-content-one" class="col-12 col-lg-4 col-lg-4-personalized container-img">
+                <div id="box-content-two" class="img-background-rgba img-zoom ">
+                    <div class="box-text container-cards-padding">
+                        <h4 id="title-color-text" class="text-white font-weight-bold scroll-one" style="font-size: calc(1vw + 1em)">PRESTAMOS PERSONALES</h4>
+                        <span class="lead">Pedí tu prestamo personal. Destino libre, tasa fija en pesos, sistema de amortización francés y hasta en 60 cuotas</span>
+                    </div>
+                    <img class="img-fluid w-100 " src="./assets/images/banner-1.png" alt="">
+                </div>
+            </div> 
+            <div id="m-box-one" class="col-12 col-lg-4 col-lg-4-personalized container-img">
+                <div id="m-box-two" class="img-background-rgba img-zoom">
+                    <div class="box-text container-cards-padding">
+                         <h4 id="m-text-three" class="text-white font-weight-bold  scroll-two" style="font-size: calc(1vw + 1em)">MICROPRESTAMOS</h4>
+                        <span class="lead">Con microprestamos de RollingBank llevate hasta $30.000 en el acto, solo con tu DNI </span>
+                    </div>
+                    <img class="img-fluid w-100 " src="./assets/images/banner-2.png" alt="">
+                </div>
+            </div>   
+            <div id="l-box-one" class="col-12 col-lg-4 col-lg-4-personalized container-img">
+                <div id="l-box-two" class="img-background-rgba img-zoom ">
+                    <div class="box-text container-cards-padding">
+                        <h4 id="l-box-three" class="text-white font-weight-bold scroll-three" style="font-size: calc(1vw + 1em)">PRESTAMOS FAMILIARES</h4>
+                        <span class="lead">Un prestamo diseñado para la familia, con los prestamos familiares conseguí la casa que tanto necesitás</span>
+                    </div>
+                    <img class="img-fluid w-100" src="./assets/images/banner-3.png" alt="">
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</section>
+
+    <!--==========================================-->
+    <!--===========Seccion 4=============-->
+    <!--==========================================-->
+<div  class="contacto">
+    <section class="container  py-5"  id="seccion_four_target">
+        <div class="row ">
+            <div class="col-12 col-lg-6 mt-3 pb-3">
+                <div class="card ">   
+                    <form class="text-center p-5  " action="#!">
+                        <p class="h4 mb-4">Hacé tu consulta!</p>          
+                        <p>Mandanos un mensaje y a la brevedad nos ponemos en contacto con vos ingresando tu email o tu numero de telefono</p>            
+                        <p>
+                            <a href="infopage.html" target="_blank">Nuevos beneficios te esperan</a>
+                        </p>
+                        <input type="email" id="inputEmail" class="form-control mb-4" placeholder="Ingresa tu E-mail">
+                        <input type="number" id="inputNumero" class="form-control mb-4" placeholder="Numero de telefono">
+                        <textarea type="text" id="inputMensaje" class="form-control mb-4" placeholder="Tu mensaje"></textarea>
+                        <button class="btn btn-info btn-block" id="btnEnviarContacto" type="submit">Enviar</button>
+                    </form>  
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-12 col-lg-6 text-center mt-5 mt-lg-3 ">
+                <div class="card" style="height: 416px;">         
+                    <form class="text-center  p-5" action="#!">
+                        <p class="h4 mb-2">Siempre cerca tuyo</p>
+                        <p>Encontrá tu sucursal más cercana</p>            
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14240.971499135763!2d-65.2026019!3d-26.83222635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1568167678965!5m2!1ses-419!2sar" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <p class="pt-4">Gral. Paz 576, T4000 San Miguel de Tucumán, Tucumán</p>                 
+                    </form>        
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!--==========================================-->
+<!--===========Fin del Main=============-->
+<!--==========================================-->
+<footer class="bg-blue">
+    <div class="container">
+        <section class="row pt-4">
+            <div class="col-12 col-md-3  pt-4 pt-md-4 text-center text-md-left">
+                <a class="navbar-brand margin-navbar-a" href="index.html"><img src="./assets/images/LogoMakr_3KoMDG.png" alt="" style="width: 220px; height: 70px;"></a>
+            </div>
+            <div class="pt-4 text-center text-lg-left col-lg-3">
+                <ul class="">
+                    <h4 class="text-white">Informacion</h4>
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informacionfooter">Codigo practicas bancarias</a>
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informacionfooter">Defensa del consumidor</a> 
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informacionfooter">Proteccion de datos</a>
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informacionfooter">Politica ambiental 2019</a>
+                </ul>
+            </div>
+            <div class="pt-4 text-center text-lg-left col-lg-3">
+                <ul class="">
+                    <h4 class="text-white">Informes</h4>
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informesfooter">Cotización de acciones</a>
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informesfooter">Informes de mercados</a> 
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informesfooter">Código de conducta</a>
+                    <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#informesfooter">Disciplina de mercados</a>
+                </ul>
+            </div>
+                <div class="pt-4 text-center text-lg-left col-lg-3">
+                    <ul class="">
+                        <h4 class="text-white">Aviso Legal</h4>
+                        <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#avisolegalfooter">Informacion para el usuario</a>
+                        <a class="nav-link-personalized-one nav-link-hover" href="infopage.html#avisolegalfooter">Sueldos</a> 
+                    </ul>
+                </div>
+            <!-- <div class="col-12 col-md-3 pt-2 pb-4 pb-md-0 text-center text-md-right">
+            <a href="" class="mr-3"> <i class="fab fa-instagram social-icon"></i>  </a>
+            <a href="" class="mr-3"> <i class="fab fa-twitter-square social-icon "></i></a>
+            <a href="" class="mr-3"> <i class="fab fa-facebook-square social-icon"></i></a>
+            <a href=""><i class="fab fa-youtube-square social-icon"></i></a>
+            </div> -->
+        </section>
+        <hr style="background-color:rgb(177, 177, 177)">
+        <div class="row pb-5">
+            <div class="col-6">
+                <p class="text-white">© Copyright 2019 RollingBank - All Rights Reserved</p>
+            </div>
+            <div class="col-6 text-right">
+                <a href="https://www.facebook.com"> <i class="fab fa-facebook-square social-icon mr-3"></i></a>
+                <a href="https://twitter.com" class="mr-3"> <i class="fab fa-twitter-square social-icon "></i></a>
+                <a href="https://www.instagram.com" class="mr-3"> <i class="fab fa-instagram social-icon"></i>  </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--==========================================-->
+<!--===========Modales=============-->
+<!--==========================================-->
+
+<div class="modal fade" id="modalSolicitaTarjeta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">RollingBank</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form class="p-3" action="#0" method="post">
+                <p class="h4 mb-4 text-center">Solicita Tu tarjeta</p>
+                <div class="text-center"> 
+                    <i class="fas fa-credit-card text-center pb-4" style="font-size: 80px; color: rgb(185, 183, 183)"></i>
+                </div>
+                <div class="form-group mb-4">                 
+                    <input type="text" class="form-control form-control-two btn-border" id="nombreModal" placeholder="Nombre" required="required">
+                </div>
+                <div class="form-group mb-4">            
+                    <input type="text" class="form-control form-control-two btn-border" id="apellidoModal" placeholder="Apellido" required="required">
+                </div>
+                <div class="form-group  mb-4">
+                    <select id="generoModal" class="form-control form-control-two btn-border" required="required">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select>         
+                </div>
+                <div class="form-group  mb-4">
+                    <input type="number" class="form-control form-control-two btn-border" id="dniModal" placeholder="Ingresa tu DNI" required="required">    
+                </div>
+                <div class="form-group has-success  mb-4">
+                    <input type="email" class="form-control form-control-two btn-border" id="correoModal" placeholder="Correo electrónico">
+                    <div class="valid-feedback"></div> 
+                </div>
+                <div class="form-group  mb-4">
+                    <input type="text" class="form-control form-control-two btn-border" id="direccionModal" placeholder="Por ejemplo: Av 9 de julio 700">
+                </div>
+                <div class="form-group  mb-4">
+                    <input type="number" class="form-control form-control-two btn-border" id="celularModal" placeholder="Cód. área + Nro. Ej: 011 - 155456523">
+                </div>
+                <div class="form-group  mb-4">
+                    <select id="estadocivilModal" class="form-control form-control-two btn-border">
+                        <option value="soltero">Soltero/a</option>
+                        <option value="casado">Casado/a</option>
+                        <option value="divorciado">Divorciado/a</option>
+                        <option value="viudo">Viudo/a</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="submit" id="solicitarTarjetaSlider" class="btn btn-primary" data-dismiss="modal">Solicitar</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+

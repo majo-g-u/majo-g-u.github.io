@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+  text-align: center;
+}
+header {
+    height: 100px;
+   background:  #f2f2f2;
+}
+
+form {
+    padding: 40px;
+    height: 500px;
+    background: #393652
+}
+
+.nombre {
+    padding: 10px;
+    border: 3px solid #005b5b44;
+    margin: 10px 10px 30px 10px;
+}
+
+.password {
+    padding: 10px;
+    border: 3px solid #005b5b;
+    margin: 10px 10px 30px 10px;
+}
+
+#pais{
+    padding: 10px;
+    border: 3px solid #005b5b;
+    margin: 10px 10px 30px 10px;
+}
+
+.mujer {
+    padding: 10px;
+    border: 3px solid #005b5b;
+    margin: 10px 10px 30px 10px;
+}
+
+.hombre {
+    padding: 10px;
+    border: 3px solid #005b5b;
+    margin: 10px 10px 30px 10px;
+}
+footer {
+    height: 100px;
+    background: #ccc;
+}
