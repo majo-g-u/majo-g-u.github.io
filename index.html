@@ -1,68 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<title>My Portfolio</title>	
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	 <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="./style.css">
-	<title>Document</title>
-	
-	
+	<link href="css/freelancer.min.css" rel="stylesheet">
 </head>
-<body>
 
-	<header>
-		<ul class="nav justify-content-center">
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Home</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">About</a>
-			  </li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Projects</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Contact</a>
-			  </li>
-		  </ul>
+
+     <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">María José Gómez Urrutia </a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+
+      <!-- Masthead Avatar Image -->
+      <img class="masthead-avatar mb-5" src="images/fotoCv.jpg" alt="Mi Foto de Perfil">
+
+      <!-- Masthead Heading -->
+      <h1 class="masthead-heading text-uppercase mb-0">Software Enthusiast</h1>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+		  <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Masthead Subheading -->
+      <p class="masthead-subheading font-weight-light mb-0">Communicative - Proactive - Flexible</p>
+
+    </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="page-section portfolio" id="portfolio">
+    <div class="container">
+
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Portfolio Grid Items -->
+      <div class="row">
+
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto">          
+			<a href="./perfumes3f/index.html" class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" target="_blank"></a>
+			<div class="portfoliotitle">
+				<h3 >Perfumes</h3>
+				<img class="img-fluid" src="images/perfume.jpg" alt="" >
+			</div>		
+          </div>
+        </div>
+
+        <!-- Portfolio Item 2 -->
+		<div class="col-md-6 col-lg-4">
+			<div class="portfolio-item mx-auto">          
+			  <a href="./fakenews/index.html" class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" target="_blank"></a>
+			  <div>
+				<h3 >Fake News</h3>
+				  <img class="img-fluid" src="images/logoNF.png" alt="" >
+			  </div>		
+			</div>
+		  </div>
+
+        <!-- Portfolio Item 3 -->
+		<div class="col-md-6 col-lg-4">
+			<div class="portfolio-item mx-auto">          
+			  <a href="./clinicas/index.html" class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" target="_blank"></a>
+			  <div>
+				<h3 >Clinica</h3>
+				  <img class="img-fluid" src="images/salud.png" alt="" >
+			  </div>		
+			</div>
+		  </div>
+
+        <!-- Portfolio Item 4 -->
+		<div class="col-md-6 col-lg-4">
+			<div class="portfolio-item mx-auto">          
+			  <a href="./javaScriptTabla/index.html" class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" target="_blank"></a>
+			  <div>
+				<h3 >Tabla Data </h3>
+				  <img class="img-fluid" src="images/tabla.png" alt="" >
+			  </div>		
+			</div>
+		  </div>
+
+        <!-- Portfolio Item 5 -->
+		<div class="col-md-6 col-lg-4">
+			<div class="portfolio-item mx-auto">          
+			  <a href="./RollingBank/src/index.html" class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" target="_blank"></a>
+			  <div>
+				<h3 >Homebanking</h3>
+				  <img class="img-fluid" src="images/banking.jpg" alt="" >
+			  </div>		
+			</div>
+		  </div>
+
+
+        <!-- Portfolio Item 6 -->
+        <div class="col-md-6 col-lg-4">
+			<div class="portfolio-item mx-auto">          
+			  <a href="./Ecommerce/index.html" class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" target="_blank"></a>
+			  <div>
+				<h3 >E-commerce</h3>
+				  <img class="img-fluid" src="images/commerce.jpg" alt="" >
+			  </div>		
+			</div>
+		  </div>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- About Section Content -->
+      <div class="row">
+        <div class="text-lg-center">
+          <p class="lead">I’m 30 years old. I graduated as a teacher of English in 2016 and when I became interested in the fascinating world of Software Industry and Agile Methodologies, I decided to take a new turn. I’m looking forward to being part of projects and teams where communicative skills are the key to creating new and innovative products. I’m flexible, motivated and willing to take challenges.</p>
+        </div>
+      </div>
+
+      <!-- About Section Button -->
+      <div class="text-center mt-4">
+		<a class="btn btn-xl btn-outline-light" href="https://drive.google.com/open?id=1kpkTgtbnD6gZvne2EzePcixpkBhHJkO3" target="_blank"> 
+			<i class="fas fa-download mr-2"></i>        
+			My Resume!
+			   </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+
+      <!-- Contact Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Contact Section Form -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+			<h4 class="phone text-lg-center">
+				Phone Number:3815186445
+			</h4>
+			<h4 class="email text-lg-center">
+				Email Address: majogomezurrutia@gmail.com
+			</h4>		
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+
+        <!-- Footer Location -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">Uriarte
+            <br>2200</p>
+        </div>
+
+        <!-- Footer Social Icons -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/mariajosegomezurrutia/" target="_blank">
+            <i class="fab fa-fw fa-linkedin-in"></i>
+          </a>
+        </div>
+
+        <!-- Footer About Text -->
+        <div class="col-lg-4">
+          <h4 class="text-uppercase mb-4">About Me</h4>
+          <p class="lead mb-0">Communicative, Proactive and Flexible</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; majogomezurrutia</small>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+ 
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+ 
 	
-	</header>
-
-	<main>
-		<section>
-			<div class="container">
-			  <div class="row">
-				<p class="col-8">presentation card</p>
-				<p class="col-4">img</p>
-			  </div>				
-			</div>
-         
-		</section>
-		<section>
-			<p>SKILLS</p>
-		</section>
-		<section>
-			<div class="container">
-				<div class="row">
-					<p>MIS PROJECTS</p>
-					<div>
-						<a href="./fakenews/index.html">FAKE NEWS</a>
-						<a href="./codecare/src/index.html">code CARE</a>
-						<a href="./javaScriptTabla/index.html">js tabla</a>
-						<a href="./perfumes3f/index.html">perfumes</a>
-						<a href="./RollingBank/index.htm">RollingBank</a>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer>
-
-	</footer>
-
-
 
 	
 

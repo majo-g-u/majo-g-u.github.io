@@ -1,0 +1,320 @@
+
+
+.w-20 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+@media (min-width: 576px) {
+  .w-sm-20 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .w-md-20 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  .w-lg-20 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .w-xl-20 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+.bd-navbar{
+ background-color:#f8b500;
+}
+
+.nav-item a{
+  text-decoration: none;
+  color: black;
+}
+
+.active{
+  text-decoration: underline;
+}
+.product-card-container{
+  margin-top:2rem;
+}
+
+.pagination a{
+  color: black;
+}
+
+
+.card-body {
+    padding: 0.25rem;
+}
+
+.card-title{
+  text-align: center;
+}
+.img-card{
+  height: 150px;
+}
+
+
+.card-text{
+  margin:0.5rem;
+  justify-content: center;
+  text-align: left;
+  height: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-img-top{
+  height: 150px;
+  width: 100%;
+}
+
+ 
+.btn-products {
+  border-color: white; 
+  background-color: #578033;
+}
+
+.btn-search{
+  color: black;
+}
+
+.card-title{
+ height: 30px;
+ margin-bottom: 1rem;
+}
+
+.card-img-top{
+  margin-bottom: 40px;
+  width:100%;
+  height:auto;
+ }
+
+.btn-discount{
+  position: absolute;
+  right: -20px;
+  top: -10px;
+  color: white;
+  background-color: grey;
+  border:solid black;
+}
+
+.img-fluid{
+  width: 100%;
+}
+
+.picture img{
+  width: 100%
+  height: auto;
+}
+
+ .buttons{
+ border-color: solid black; 
+ background-color: #df1412;
+}
+
+.container-pagos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.container-pagos a{
+
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+}
+
+.container-pagos a:hover{
+
+  color: #f8b500;
+}
+
+
+.container-total{
+  width: 100%;
+  height: 120px;
+}
+
+
+.container-seccion{
+          
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    
+}
+
+
+.container-seccion a{
+
+  margin-left: 20px;
+  font-size: 17px;
+  color: #6B6B6B;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-seccion a:hover{       
+    color: #f8b500;   
+}
+
+
+.text-product p span{
+
+  font-size: 28px;
+  color: #323030;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+.container-seccion2 p{
+
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: 'Carrois Gothic', sans-serif;
+}
+
+
+.formadepago p span{
+
+  font-size: 20px;
+  color: #C11D1D;
+}
+
+
+.formadepago img{
+
+  width: 60px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+
+.carrito{    
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.carrito img{
+  width: 50px;
+  height: 50px;
+}
+
+.carrito a{
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background: black;
+}
+
+
+.carrito a:hover{
+  background: white;
+  color: black;
+  box-sizing: border-box;
+  border: 2px solid #ab2328 ;
+}
+
+.compra2{
+  padding-top: 50px;
+}
+.text-information{
+  justify-content: flex-end;
+  margin-top: 50px;
+  font-family: 'Thasadith', sans-serif;
+
+}
+
+
+.text-information h4{
+
+  color: #6C6C6C;
+  margin-bottom: 10px;
+}
+
+.text-information h2{
+
+     font-size: 30px;
+     margin-bottom: 10px;
+}
+
+.text-information h3{
+
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+.container-detalles{
+
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.titulo1 h2{
+
+  padding: 20px;
+  font-size: 26px;
+  color: #2E2E2E;
+
+}
+
+.titulo2 h3{
+
+  margin-top: 10px;
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #4F4F4F;
+}
+
+.titulo2 h4{
+
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.titulo2 p{
+
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container-detalles{
+  margin-top: 50px;
+}
+
+.link-prod a{
+  text-decoration: none;
+  color: black;
+}
+
